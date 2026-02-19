@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<header class="mb-8 text-center">
+
+    <!-- Profile Image -->
+    <div class="flex justify-center mb-4">
+        <img src="https://drive.usercontent.google.com/download?id=1xa5WyGwH19-KZgnFGcvoIofx7kkbsswi&export=view&authuser=2" 
+             alt="My Profile" 
+             class="w-32 h-32 rounded-full border-4 border-black object-cover shadow-md">
+    </div>
+</header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-hover {
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl w-full px-4 mx-auto">
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-gray-800">
+            My Daily Workspace
+            </h1>
+            <p class="text-gray-600">
+            Quick access to my essential registers and CC budget sheets.
+            </p>
+        </header>
+    </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Category: Bill Registers -->
+            <section class="glass-card p-6 rounded-2xl shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="p-2 bg-blue-100 rounded-lg mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-700">Bill Registers</h2>
+                </div>
+                <div class="space-y-3">
+                    <a href="https://docs.google.com/spreadsheets/d/1tfzbkJh33TjHS6emg4XXh-LuYIYTMoGI/edit?usp=sharing&ouid=112680608832925476641&rtpof=true&sd=true" target="_blank" class="block w-full p-3 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium btn-hover flex justify-between items-center">
+                        CC Outward Bill Register
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-400">Open →</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/" target="_blank" class="block w-full p-3 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium btn-hover flex justify-between items-center">
+                        CC Inward Bill Register
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-400">Open →</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Category: Budget Tracking -->
+            <section class="glass-card p-6 rounded-2xl shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="p-2 bg-green-100 rounded-lg mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-700">Budget Usage</h2>
+                </div>
+                <div class="space-y-3">
+                    <a href="https://docs.google.com/spreadsheets/d/1_906xUpbMxS4bZkS3CVwIFWMbLdJQltF7oDP3Si96Nw/edit?usp=sharing" target="_blank" class="block w-full p-3 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium btn-hover flex justify-between items-center">
+                        CC Budget Sheet (FY: 2025-26)
+                        <span class="text-xs bg-green-50 px-2 py-1 rounded text-green-600">Current</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1GQ5LbXot0K-hdeoSaqhVdHJ4qLFsLnZT2Mi0D4Xp6jE/edit?usp=sharing" target="_blank" class="block w-full p-3 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium btn-hover flex justify-between items-center">
+                        CC Budget Sheet (FY: 2024-25)
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-400">Archive</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Category: Staff Management -->
+            <section class="glass-card p-6 rounded-2xl shadow-sm md:col-span-2">
+                <div class="flex items-center mb-4">
+                    <div class="p-2 bg-purple-100 rounded-lg mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-700">Leave Registers</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://docs.google.com/spreadsheets/d/17lzdv1nTwrCe2xp3xyU48Rjw0pT9fCTNv-wUcl2to9Q/edit?usp=sharing" target="_blank" class="p-4 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium btn-hover">
+                        <div class="text-sm text-purple-500 mb-1">Standard Staff</div>
+                        CC Staff Leave Register
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1FtJ9_PZXP48DKJgfALcgGMKrVltHCa8CkfmiP7Fy9Nw/edit?usp=sharing" target="_blank" class="p-4 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium btn-hover">
+                        <div class="text-sm text-purple-500 mb-1">Support Staff</div>
+                        CC Supporting Staff Register
+                    </a>
+                </div>
+            </section>
+
+
+                        <!-- Category: My personal day-to-day Expenditure -->
+            <section class="glass-card p-6 rounded-2xl shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="p-2 bg-green-100 rounded-lg mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-gray-700">Budget Usage</h2>
+                </div>
+                <div class="space-y-3">
+                    <a href="https://iith-my.sharepoint.com/:x:/g/personal/harshavardan_b_admin_iith_ac_in/IQADZJrHxA97SYllvfAX6cbtAeNTK75ijRD-O7dpVNVU4TE?email=harshajonnavaram%40outlook.com&e=tcoMCa" target="_blank" class="block w-full p-3 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium btn-hover flex justify-between items-center">
+                        CC Budget Sheet (FY: 2025-26)
+                        <span class="text-xs bg-green-50 px-2 py-1 rounded text-green-600">Current</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/" target="_blank" class="block w-full p-3 bg-white border border-gray-200 rounded-xl text-gray-700 font-medium btn-hover flex justify-between items-center">
+                        CC Budget Sheet (FY: 2024-25)
+                        <span class="text-xs bg-gray-100 px-2 py-1 rounded text-gray-400">Archive</span>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="mt-12 text-center text-gray-400 text-sm">
+            <p>Workplace Dashboard &bull; Access limited to authorized personnel</p>
+        </footer>
+    </div>
+
+</body>
+</html>
